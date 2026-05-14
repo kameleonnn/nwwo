@@ -1,0 +1,17 @@
+name: CI Pipeline
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobranie repozytorium
+        uses: actions/checkout@v3
+      - name: Instalacja zależności
+        run: echo "Instalacja zależności..."
+      - name: Budowanie projektu
+        run: echo "Budowanie aplikacji..."
+      - name: Uruchomienie testów
+        run: echo "Uruchamianie testów..."
