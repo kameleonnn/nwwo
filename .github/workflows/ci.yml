@@ -22,4 +22,4 @@ jobs:
       - name: Uruchomienie testów
         run: mvn test
       - name: Deploy
-        run: echo "Wdrażanie aplikacji...""
+        run: echo "Wdrażanie aplikacji..."
