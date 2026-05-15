@@ -6,12 +6,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    continue-on-error: false
     steps:
       - name: Pobranie repozytorium
         uses: actions/checkout@v3
       - name: Instalacja zależności
-        run: echo "Instalacja zależności..."
+        run: mvn dependency:resolve
       - name: Budowanie projektu
-        run: echo "Budowanie aplikacji..."
+        run: mvn compile
       - name: Uruchomienie testów
-        run: echo "Uruchamianie testów..."
+        run: mvn test
