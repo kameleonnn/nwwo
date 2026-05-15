@@ -1,7 +1,7 @@
 name: CI Pipeline
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "doc" ]
   pull_request:
 jobs:
   build:
@@ -17,9 +17,5 @@ jobs:
           key: ${{runner.os}}-maven-${{hashFiles('**/pom.xml')}}
       - name: Instalacja zależności
         run: mvn dependency:resolve
-      - name: Budowanie projektu
-        run: mvn compile
-      - name: Uruchomienie testów
-        run: mvn test
-      - name: Deploy
-        run: echo "Wdrażanie aplikacji...""
+      - name: Wrsja JDK
+        run: mvn -v

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"dev.kameleonnn.hello","c":"Hello","l":"greet(String)","u":"greet(java.lang.String)","k":"6"},{"p":"dev.kameleonnn.hello","c":"Hello","l":"Hello()","u":"%3Cinit%3E()","k":"3"},{"p":"dev.kameleonnn.hello","c":"Hello","l":"main(String[])","u":"main(java.lang.String[])","k":"6"}];updateSearchResults();
